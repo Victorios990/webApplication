@@ -11,21 +11,30 @@ li {
 
 .list {list-style: square;}
 
-#msg {
+/* #msg {
     font-family: monspace;
 }
-
+*/
 .light-theme {
-    color:black;
-    background: #070317;
+    color:rgb(46, 18, 68);
+    background: #e6f3f3;
 }
 
 .dark-theme {
-    --bg: var(--green);
+    --bg: var(--black);
     --fontColor: var(--green);
 }
 :root {
     --green: #00FF00;
     --white: #ffffff;
     --black: #000000;
+}
+
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+body {
+    background: var(--bg);
 }
