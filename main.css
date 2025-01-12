@@ -9,20 +9,24 @@ li {
     list-style: circle;
 }
 
-.list {list-style: square;}
+.list {list-style: circle;}
 
 /* #msg {
     font-family: monspace;
 }
 */
 .light-theme {
-    color:rgb(46, 18, 68);
-    background: #e6f3f3;
+    --color:rgb(46, 18, 68);
+    --background: #e6f3f3;
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
 }
 
 .dark-theme {
     --bg: var(--black);
     --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
 }
 :root {
     --green: #00FF00;
@@ -38,3 +42,16 @@ li {
 body {
     background: var(--bg);
 }
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250ps;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn:focus {outline-style: none;}
